@@ -1,0 +1,228 @@
+body {
+    background-color: #f8f8f8;
+    font-family: 'Exo', sans-serif;
+}
+
+header{
+    margin: 0;
+}
+.nav-bar {
+   margin:1.5em;
+   margin-top: 3em;
+}
+
+hr{
+   margin: 0;
+   margin-left:3.4375em;
+   margin-right:3.4375em;
+   background-color: #584f9e;
+}
+.nav-links{
+  list-style: none; 
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-l1 a {
+   text-decoration: none; 
+   font-family: 'Exo', sans-serif;
+   font-size:1.3rem;
+   color: #ff5851;
+}
+
+.thegrid {
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "first"
+        "second"
+        "third"
+        "fourth";
+}
+.title {
+    text-align: center;
+    font-size:2.8rem;
+    font-weight: bold;
+    margin:.7em; 
+    color:#ff5851;
+}
+
+.hr2 {
+    margin:0;
+    margin-left: 1em;
+    margin-right: 1em;
+    background-color: #584f9e;
+
+}
+.container1{
+        grid-area: "first";
+        display: flex;
+        justify-content:center;
+        align-items:center; 
+        justify-items: center;
+        background-color: #f8f8f8;
+        height:50em;
+        width:100%;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+    font-family: 'Exo', sans-serif;
+    background-color: #f8f8f8;
+    color: #ff5851;
+    text-align:center;
+    width: 33%;
+    border-radius: .625em;
+    border: solid #ff5851; 
+    border-width: .125em .25em;
+    padding: .625em;
+}
+
+.container2 {
+    display: flex;
+    grid-area: "second";
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    height:50em;
+    width: 100%;
+    background-color:#ff5851 ;
+}
+
+.item2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+    font-family: 'Exo', sans-serif;
+    background-color: #ff5851;
+    color: #f8f8f8;
+    text-align:center;
+    width: 33%;
+    border-radius:.625em;
+    border: solid #f8f8f8; 
+    border-width:.125em .25em;
+    padding: .625rem; 
+}
+
+.container3 {
+    display: flex;
+    grid-area: "third";
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    height:50em;
+    width: 100%;
+    background-color: #e2e2e1;
+}
+
+.item3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+    font-family: 'Exo', sans-serif;
+    background-color: #f8f8f8;
+    color: #584f9e;
+    text-align:center;
+    width: 33%;
+    border-radius:.625em;
+    border: solid #584f9e; 
+    border-width: .125em .25em;
+    padding: .625rem; 
+}
+
+
+
+.container4 {
+    display: flex;
+    grid-area: "d";
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    height:50em;
+    width: 100%;
+    background-color:#f8f8f8;
+    overflow: hidden;
+}
+
+.outro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Exo', sans-serif;
+    font-size: 1.2rem;
+    background-color: #f8f8f8;
+    color: #ff5851;
+    text-align:center;
+    width: 33%;
+    padding:.625em;
+}
+
+p {
+    animation-duration: 5s;
+    animation-name: slidein; 
+    animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+        from { 
+            margin-left: 100%;
+            width: 200%;
+        }
+
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+footer {
+        text-align: center;
+        margin-bottom: 3em;
+        position: relative;
+        overflow: hidden;
+        
+}
+
+footer a{
+        font-size: 1.5rem;
+        color: #ff5851;
+
+}
+
+@media only screen and (min-width: 881px) and (max-width: 2160px) {
+ .thegrid {
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "first" "second"
+        "third" "fourth";
+        grid-gap: 4px;
+        margin-bottom:1.25em; 
+}
+.hr2{
+    display: none;
+} 
+.title{
+    margin-bottom:1.5em;
+    margin-top: 1em;
+}
+ .container1{
+        grid-area: "first";
+        display: flex;
+        justify-content:center;
+        align-items:center; 
+        justify-items: center;
+        background-color: #f8f8f8;
+        height:50em;
+        width:100%;
+}     
+}
+
