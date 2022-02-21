@@ -7,6 +7,9 @@ header{
     margin: 0;
 }
 .nav-bar {
+   justify-content: center;
+   align-content: space-evenly;
+   align-items: center; 
    margin:1.5em;
    margin-top: 3em;
 }
@@ -20,7 +23,8 @@ hr{
 .nav-links{
   list-style: none; 
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  padding: 0px;
 }
 
 .nav-l1 a {
@@ -28,6 +32,21 @@ hr{
    font-family: 'Exo', sans-serif;
    font-size:1.3rem;
    color: #ff5851;
+}
+.nav-l2 a {
+   text-decoration: none;
+   font-family: 'Exo', sans-serif;
+   font-size:1.3rem;
+   color: #ff5851;
+
+}
+.nav-l3 a {
+   text-decoration: none;
+   font-family: 'Exo', sans-serif;
+   font-size:1.3rem;
+   color: #ff5851;
+
+
 }
 
 .thegrid {
