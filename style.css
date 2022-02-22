@@ -100,6 +100,7 @@ hr{
     border: solid #ff5851; 
     border-width: .125em .25em;
     padding: .625em;
+    white-space: nowrap;
 }
 
 .container2 {
